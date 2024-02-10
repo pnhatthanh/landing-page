@@ -137,24 +137,28 @@ li{
     line-height: 1.88;
 }
 .about-area{
-    margin: 0 16rem;
+    padding: 130px 15px;;
+    margin: 0 14rem;
     display: flex;
     justify-content: center;
 }
 .about-img{
     width: 50%;
+    padding: 0 15px;
 }
 .about-img img{
     float: right;
 }
 .content-about{
     width: 50%;
+    padding: 0 15px;
 }
 .content-about .sub-title{
     color: #564DCA;
     letter-spacing: 0.02em;
     padding: 0;
     text-decoration: underline;
+    display: block;
     margin-bottom: 18px;
     font-size: 14px;
     font-weight: 700;
@@ -163,6 +167,7 @@ li{
     font-size: 45px;
     color: #030B15;
     line-height: 1.26;
+    margin: 0;
 }
 .content-about p{
     color: #727885;
@@ -181,6 +186,9 @@ ul{
 .content-about ul li{
     color: #030B15;
     margin-bottom: 10px;
+}
+.content-about ul{
+    margin-bottom: 45px;
 }
 .content-about a{
     color: #fff;
