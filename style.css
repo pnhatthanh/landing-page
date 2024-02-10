@@ -66,7 +66,18 @@ li{
 .btn-li{
     margin-left: 35px;
 }
-
+.section-img::before{
+    content: "";
+    background-image: url("https://themedox.com/demo/bigtech-live/bigtech/assets/img/banner/banner_shape.svg");
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 722px;
+    z-index: -1;
+}
 .section-img{
     background-image: url("https://themedox.com/demo/bigtech-live/bigtech/assets/img/banner/banner_bg02.jpg");
     background-size: cover;
@@ -78,6 +89,7 @@ li{
     height: 100%;
     z-index: -1;
 }
+
 .section-intro{
     text-align: center;
     padding: 0px 15px;
@@ -113,4 +125,77 @@ li{
     position: absolute;
     bottom: 150px;
     left: 40px;
+}
+.section-countdown{
+    text-align: center;
+}
+.section-countdown .title{
+    color: #030B15;
+    letter-spacing: -0.01em;
+    font-size: 26px;
+    margin-bottom: 35px;
+    line-height: 1.88;
+}
+.about-area{
+    margin: 0 16rem;
+    display: flex;
+    justify-content: center;
+}
+.about-img{
+    width: 50%;
+}
+.about-img img{
+    float: right;
+}
+.content-about{
+    width: 50%;
+}
+.content-about .sub-title{
+    color: #564DCA;
+    letter-spacing: 0.02em;
+    padding: 0;
+    text-decoration: underline;
+    margin-bottom: 18px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.title-about{
+    font-size: 45px;
+    color: #030B15;
+    line-height: 1.26;
+}
+.content-about p{
+    color: #727885;
+    margin-bottom: 20px;
+    width: 80%;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+.content-about ul li i{
+    color: #564DCA;
+    margin-right: 10px;
+    font-weight: 900;
+} 
+.content-about ul li{
+    color: #030B15;
+    margin-bottom: 10px;
+}
+.content-about a{
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 1;
+    background: #564DCA;
+    border-radius: 5px;
+    padding: 25px 42px;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0px 6px 22px rgba(6, 34, 51, 0.22);
 }
