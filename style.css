@@ -1,4 +1,6 @@
-
+body{
+    margin: 0;
+}
 .container{
     margin: 0;
     padding: 0;
@@ -10,12 +12,18 @@
     line-height: 1.75;
 }
 .header{
+    padding: 30px 15px;
     height: 94px;
     width: 100%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    box-sizing: border-box;
 }
 li{
     list-style: none;
@@ -33,7 +41,7 @@ li{
    
 }
 .navigation li{
-    margin-right: 40px;
+    margin-right: 65px;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
@@ -66,7 +74,7 @@ li{
 .btn-li{
     margin-left: 35px;
 }
-.section-img::before{
+.banner-img::before{ 
     content: "";
     background-image: url("https://themedox.com/demo/bigtech-live/bigtech/assets/img/banner/banner_shape.svg");
     position: absolute;
@@ -78,7 +86,8 @@ li{
     height: 722px;
     z-index: -1;
 }
-.section-img{
+.banner-img{
+    padding-top: 225px;
     background-image: url("https://themedox.com/demo/bigtech-live/bigtech/assets/img/banner/banner_bg02.jpg");
     background-size: cover;
     background-position: center;
@@ -86,18 +95,23 @@ li{
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 164px);
     z-index: -1;
 }
-
+.banner-content{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding-top: 90px;
+}
 .section-intro{
     text-align: center;
-    padding: 0px 15px;
     width: 100%;
-    margin: 0px 15px;
-    position: relative;
+    margin: 0;
 }
 .title-sect{
+    margin-top: 0;
     margin-bottom: 50px;
     font-size: 55px;
     color: #FFFFFF;
@@ -123,8 +137,8 @@ li{
 .banner-social {
     display: inline-block;
     position: absolute;
-    bottom: 150px;
-    left: 40px;
+    left: 100px;
+    bottom: 90px;
 }
 .section-countdown{
     text-align: center;
@@ -135,6 +149,9 @@ li{
     font-size: 26px;
     margin-bottom: 35px;
     line-height: 1.88;
+}
+.mg-14{
+    margin: 0 14rem;
 }
 .about-area{
     padding: 130px 15px;;
@@ -206,4 +223,227 @@ ul{
     text-transform: uppercase;
     text-decoration: none;
     box-shadow: 0px 6px 22px rgba(6, 34, 51, 0.22);
+}
+.choose-area::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image:url("https://themedox.com/demo/bigtech-live/bigtech/assets/img/bg/choose_shape01.png");
+    width: 100%;
+    height: 25px
+}
+.choose-area{
+    background-image: url("https://themedox.com/demo/bigtech-live/bigtech/assets/img/bg/choose_bg.jpg");
+    background-size: cover;
+    position: relative;
+    padding-top: 130px;
+    padding-bottom: 218px;
+}
+.choose-area::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url("https://themedox.com/demo/bigtech-live/bigtech/assets/img/bg/choose_shape02.png");
+    width: 100%;
+    height: 19px;
+}
+.header-choose{
+   text-align: center;
+   line-height: 1.75;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.header-choose .sub-title{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+.sub-deco{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #00C4F4;
+    border-radius: 50%;
+}
+.header-choose .title{
+    font-size: 42px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 0;
+    text-transform: capitalize;
+    width: 50%;
+}
+.choose-items{
+    display: flex;
+    justify-content: space-between;
+}
+.choose-items .item{
+    padding: 0 15px;
+}
+.choose-icon{
+    margin-bottom: 35px;
+}
+.choose-content{
+    width: 77%;
+    box-sizing: border-box;
+}
+.choose-content .title {
+    font-size: 22px;
+    margin-bottom: 24px;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.27;
+}
+.choose-content .title a{
+    text-decoration: none;
+    color: #ffff;
+   
+}
+.choose-content p{
+    margin-bottom: 0px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #A4B4C3;
+}
+.counter-section{
+    padding: 64px 75px 33px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 34px 35px rgba(160, 171, 191, 0.21);
+    border-radius: 20px;
+    position: relative;
+    top: -120px
+}
+.counter-content{
+    display: inline-block;
+}
+.counter-item img{
+    margin-right: 30px;
+}
+.counter-content h2{
+    color: #030B15;
+    letter-spacing: -0.02em;
+    font-size: 48px;
+    line-height: 0.85;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+.counter-content p{
+    margin-bottom: 0;
+    color: #646580;
+    line-height: 1.6;
+}
+.strategy-section{
+
+}
+.header-strategy .sub-title{
+    color: #564DCA;
+    letter-spacing: 0.02em;
+    padding: 0;
+    text-decoration: underline;
+    margin-bottom: 18px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.header-strategy{
+    text-align: center;
+}
+.header-strategy .title{
+    font-size: 45px;
+    color: #030B15;
+    line-height: 1.26;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.roadmaps::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(294.72deg, #FF4581 9.05%, #4388DD 79.28%);
+    opacity: 0.1;
+}
+.roadmaps{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+.roadmap-item{
+    width: 288px;
+    margin-left: 60px;
+}
+.roadmap-title{
+    display: inline-block;
+    color: #00C4F4;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    letter-spacing: 0.1em;
+}
+.roadmap-content{
+    margin-left: 57px;
+    padding-left: 17px;
+    padding-top: 75px;
+    position: relative;
+}
+.roadmap-content .title{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #030B15;
+    line-height: 1.62;
+}
+.roadmap-content::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #00C4F4;
+}
+.roadmap-content p{
+    color: #727885;
+}
+.dot::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 32px;
+    height: 32px;
+    background: #00C4F4;
+    border-radius: 50%;
+    opacity: 0.1;
+}
+.dot{
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background: #00C4F4;
+    border-radius: 50%;
 }
