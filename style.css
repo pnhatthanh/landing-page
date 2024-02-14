@@ -347,9 +347,6 @@ ul{
     color: #646580;
     line-height: 1.6;
 }
-.strategy-section{
-
-}
 .header-strategy .sub-title{
     color: #564DCA;
     letter-spacing: 0.02em;
@@ -385,14 +382,14 @@ ul{
     position: relative;
     display: flex;
     align-items: flex-start;
+    margin-bottom: 50px;
 }
 .roadmap-item{
-    width: 288px;
+    width: 25%;
     margin-left: 60px;
 }
 .roadmap-title{
     display: inline-block;
-    color: #00C4F4;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -412,15 +409,7 @@ ul{
     margin-bottom: 20px;
     color: #030B15;
     line-height: 1.62;
-}
-.roadmap-content::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 1px;
-    height: 100%;
-    background: #00C4F4;
+    text-transform: capitalize;
 }
 .roadmap-content p{
     color: #727885;
@@ -433,7 +422,6 @@ ul{
     transform: translate(-50% , -50%);
     width: 32px;
     height: 32px;
-    background: #00C4F4;
     border-radius: 50%;
     opacity: 0.1;
 }
@@ -444,6 +432,56 @@ ul{
     top: 0;
     width: 16px;
     height: 16px;
-    background: #00C4F4;
     border-radius: 50%;
+}
+.child-1{
+    background: #00C4F4;
+}
+.border-1{
+    border-left: 1px solid  #00C4F4;;
+}
+.child-1::before{
+    background: #00C4F4;
+}
+.child-2{
+    background: #FF9700;
+}
+.child-2::before{
+    background: #FF9700;
+}
+.border-2{
+    border-left: 1px solid #FF9700;
+}
+.child-3{
+    background: #007FF4;
+}
+.child-3::before{
+    background: #007FF4;
+}
+.border-3{
+    border-left: 1px solid #007FF4;
+}
+.child-4{
+    background: #FF4581;
+}
+.child-4::before{
+    background: #FF4581;
+}
+.border-4{
+    border-left: 1px solid #FF4581;
+}
+.item-1{
+    color: #00C4F4;
+}
+.item-2{
+    color: #FF9700;
+}
+.item-3{
+    color:#007FF4;
+}
+.item-4{
+    color: #FF4581;
+}
+.ml-0{
+    margin-left: 0;
 }
