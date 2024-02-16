@@ -40,6 +40,9 @@ li{
     align-items: center;
    
 }
+.contact-us{
+    margin-right: 0;
+}
 .navigation li{
     margin-right: 65px;
     font-size: 14px;
@@ -74,6 +77,13 @@ li{
 .btn-li{
     margin-left: 35px;
 }
+.header-bars{
+    margin-left: 30px;
+    font-weight: 900;
+    font-size: 30px;
+    display: none;
+}
+
 .banner-img::before{ 
     content: "";
     background-image: url("https://themedox.com/demo/bigtech-live/bigtech/assets/img/banner/banner_shape.svg");
@@ -111,10 +121,14 @@ li{
     margin: 0;
 }
 .title-sect{
+    max-width: 1100px;
     margin-top: 0;
     margin-bottom: 50px;
     font-size: 55px;
     color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
 }
 .banner-social ul li{
     margin-bottom: 25px;
@@ -484,4 +498,136 @@ ul{
 }
 .ml-0{
     margin-left: 0;
+}
+
+@media only screen and (max-width: 1500px){
+    .logo img{
+        padding-top: 8px;
+        max-height: 65px;
+    }
+    .header{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        justify-content: center;
+    }
+    .header-menu{
+        flex-grow: 0;
+        margin-left: 100px;
+    }
+    .navigation li{
+        margin-right: 40px;
+        padding: 40px 0;
+    }
+    .banner-img{
+        padding-top: 180px;
+        height: calc(100% - 120px); 
+    }
+    .banner-img::before{
+        height: 580px;
+    }
+    .banner-content{
+        padding-top: 70px;
+    }
+    .banner-content img{
+        max-width: 700px;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .lang-sect{
+        display: none;
+    }
+    .header{
+        justify-content: space-between;
+    }
+    .header-menu{
+        margin-left: 60px;
+    }
+    .btn-li{
+        margin-left: 15px;
+    }
+    .banner-content .title-sect{
+        font-size: 45px;
+        max-width: 960px;
+    }
+    .banner-img{
+        height: calc(100% - 90px);
+        padding-top: 0px;
+    }
+    .banner-img::before{
+        height: 380px;
+        width: 100%;
+    }
+    .banner-content img{
+        max-width: 600px;
+    }
+    .banner-social{
+        display: none;
+    }
+   
+}
+@media only screen and (max-width: 1050px){
+    .header-menu{
+        display: none;
+    }
+    .header{
+        max-width: 720px;
+        margin: auto;
+    }
+    .header-bars{
+        display: inline-block;
+    }
+    .eng-dash{
+        display: none;
+    }
+    .banner-content .title-sect{
+        font-size: 55px;
+        line-height: 1.2;
+        max-width: 720px;
+        margin: auto;
+        padding: 0 15px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .btn-li{
+        display: none;
+    }
+    .header{
+        max-width: 540px;
+    }
+    .banner-img{
+        height: calc(100% - 95px);
+    }
+    .banner-img::before{
+        height: 260px;
+    }
+    .banner-content .title-sect{
+        font-size: 40px;
+        max-width: 540px;
+        padding-bottom: 50px;
+    }
+    .banner-content{
+        padding-left:  15px;
+        padding-right: 15px;
+        max-width: 540px;
+        margin: auto;
+    }
+    .banner-content img{
+        max-width: 100%;
+        vertical-align: middle;
+    }
+}
+@media only screen and (max-width: 510px) {
+    .banner-content .title-sect{
+        font-size: 32px;
+    }
+    .banner-content{
+        padding-top: 50px;
+    }
+    .banner-img::before{
+        height: 210px;
+        background-position: bottom;
+    }
+    .banner-img{
+        height: calc(100% - 120px);
+    }
 }
