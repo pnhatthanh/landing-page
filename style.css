@@ -499,7 +499,39 @@ ul{
 .ml-0{
     margin-left: 0;
 }
-
+.team-items{
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.team-items .item{
+    width: 25%;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.header-team{
+    width: 100%;
+}
+.team-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-social li{
+    padding: 0 10px;
+    
+}
+.team-social li a{
+    color: #fff;
+    font-size: 13px;
+}
 @media only screen and (max-width: 1500px){
     .logo img{
         padding-top: 8px;
@@ -599,6 +631,9 @@ ul{
     .counter{
         max-width: 960px;
     }
+    .counter-content h2{
+        font-size: 40px;
+    }
 }
 @media only screen and (max-width: 1050px){
     .header-menu{
@@ -652,15 +687,18 @@ ul{
     .choose-items{
         max-width: 720px;
         flex-wrap: wrap;
-        box-sizing:content-box;
         padding-left: 15px;
         padding-right: 15px;
     }
     .choose-items .item{
         width: 50%;
-        padding-left: 0;
-        padding-right: 0;
+        box-sizing: border-box;
+        padding-left: 15px;
+        padding-right: 15px;
         margin-bottom: 60px;
+    }
+    .item .choose-content{
+        width: 100%;
     }
     .counter{
         max-width: 720px;
@@ -707,7 +745,9 @@ ul{
         max-width: 540px;
     }
     .header-choose{
+        box-sizing: border-box;
         max-width: 540px;
+        padding: 0 15px;
     }
     .choose-items{
         max-width: 540px;
@@ -724,12 +764,31 @@ ul{
     .choose-content{
         width: 100%;
     }
+    .header-choose .title{
+        font-size: 36px;
+        font-weight: 600;
+        padding: 0 15px
+    }
+    .counter-content h2{
+        font-size: 34px;
+    }
+    .counter-section{
+        padding: 50px 30px 20px;
+    }
+    .counter-section .counter-item{
+        width: 50%;
+        box-sizing: border-box;
+    }
+    .counter-item img{
+        margin-right: 20px;
+    }
 }
 @media only screen and (max-width: 510px) {
     .banner-content .title-sect{
         font-size: 32px;
     }
     .banner-content{
+        box-sizing: border-box;
         padding-top: 50px;
     }
     .banner-img::before{
