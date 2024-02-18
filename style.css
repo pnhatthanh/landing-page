@@ -710,8 +710,42 @@ ul{
     .counter-item{
         width: 50%;
     }
-
-
+    
+    .strategy-section{
+        max-width: 720px;
+        margin: auto;
+    }
+    .roadmaps{
+        display: grid;
+        margin-bottom: 0px;
+        gap: 40px 30px;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        margin-bottom: 40px;
+    }
+    .roadmap-title{
+        margin-bottom: 10px;
+    }
+    .roadmaps::before{
+        background: #fff;
+    }
+    .roadmap-item{
+        margin-left: 0;
+        width: 100%;
+    }
+    .roadmap-content p br{
+        display: none;
+    }
+    .roadmap-content{
+        padding: 0;
+        margin: 0;
+        border:none;
+    }
+    .dot{
+        display: none;
+    }
 }
 @media only screen and (max-width: 768px){
     .btn-li{
