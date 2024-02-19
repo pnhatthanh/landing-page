@@ -1,0 +1,22 @@
+.shape-one{
+    animation: left-to-right 5s infinite linear;
+    height: 50px;
+}
+@keyframes left-to-right {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-50px);
+    }
+}
+.shape-two{
+    animation: rotate 10s infinite linear;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
