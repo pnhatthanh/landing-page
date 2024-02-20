@@ -598,6 +598,72 @@ ul{
 .download-content img{
     margin-right: 20px;
 }
+.question-area{
+    padding: 120px 15px 130px;
+    max-width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
+}
+.question-item{
+    background: #fff;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.question-area .title{
+    font-size: 45px;
+    color: #030B15;
+    line-height: 1.26;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 60px;
+}
+
+.answer{
+    display: none;
+    padding: 0 40px 45px 55px;
+}
+.answer p{
+    margin-bottom: 0;
+    color: #727885;
+    font-size: 18px;
+    line-height: 1.55;
+}
+.question-item h2{
+    margin: 0;
+}
+.question-item button{
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    text-align: left;
+    color: #212529;
+    padding: 37px 100px 37px 55px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.25;
+    border-radius: 100px;
+}
+.question-item{
+    border-radius: 100px;
+}
+
+.question-item button:hover{
+    border-radius: 0;
+    cursor: pointer;
+}
+.question-item button i{
+    float: right;
+    position: relative;
+    left: 40px;
+}
+.question-item:hover{
+    border-radius: 0;
+    border-bottom: 4px solid #00C4F4;
+    cursor: pointer;
+}
+.question-item:hover .answer{
+    display: block;
+}
 @media only screen and (max-width: 1500px){
     .logo img{
         padding-top: 8px;
