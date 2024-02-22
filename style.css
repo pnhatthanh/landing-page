@@ -785,6 +785,149 @@ ul{
     letter-spacing: .5px;
     line-height: 1;
 }
+.subscribe-area{
+    max-width: 1200px;
+    box-sizing: border-box;
+    padding: 0 15px;
+    margin: auto;
+}
+.new-letters{
+    display: flex;
+    box-sizing: border-box;
+    box-shadow: 0px 26px 23px rgba(81, 98, 132, 0.06);
+    border-radius: 10px;
+    padding: 64px 50px;
+    margin-top: -120px;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+}
+.new-letters .title{
+    box-sizing: border-box;
+    width: 42.5%;
+}
+.new-letters .email-subscribe{
+    width: 57.5%;
+    position: relative;
+}
+.new-letters .title h2{
+    color: #030B15;
+    font-size: 32px;
+    line-height: 1.5;
+    margin-bottom: 0;
+    letter-spacing: -1px;
+    margin-top: 0;
+}
+.email-subscribe input{
+    width: 100%;
+    border: 1px solid #ECEEF3;
+    border-radius: 4px;
+    background: #F3F6FC;
+    font-size: 16px;
+    font-weight: 400;
+    color: #030B15;
+    box-sizing: border-box;
+    padding: 26px 25px 26px 25px;
+    line-height: 1.25;
+}
+.email-subscribe button{
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    bottom: 8px;
+    padding: 25px 42px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    background: #564DCA;;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 1;
+}
+.footer-top{
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 70px 55px 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-navigation ul{
+    display: flex;
+}
+.footer-navigation ul li{
+    margin-right: 60px;
+}
+.footer-navigation ul li a{
+    color: #030B15;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    
+}
+.footer-socials ul {
+    display: flex;
+}
+.footer-socials ul li a{
+    color: #0A142F;
+    opacity: .3;
+    font-size: 24px;
+    line-height: 1;
+}
+.footer-socials ul li{
+    margin-right: 40px;
+}
+.footer-bottom{
+    max-width: 1200px;
+    box-sizing: border-box;
+    border-top: 1px solid #F0F3F9;
+    padding: 40px 55px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #0A142F;
+}
+.copyright p{
+    color: #282F3B;
+    margin-bottom: 0;
+    vertical-align: middle;
+    margin-top: 0;
+}
+.scroll-top button{
+    margin-top: -60px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: #564DCA;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -60px;
+    margin-bottom: 15px;
+}
+.scroll-top p{
+    margin: 0;
+}
+.term-privacy ul{
+    display: flex;
+}
+.term-privacy li a{
+    font-size: 15px;
+    color: #0A142F;
+    text-decoration: none;
+}
+.term-privacy ul li:first-child{
+    margin-right: 30px;
+}
 @media only screen and (max-width: 1500px){
     .logo img{
         padding-top: 8px;
