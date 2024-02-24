@@ -1021,6 +1021,10 @@ ul{
     letter-spacing: .5px;
     line-height: 1;
 }
+.email-subscribe button:hover{
+    background: #00C4F4;
+    cursor: pointer;
+}
 .footer-top{
     max-width: 1200px;
     box-sizing: border-box;
@@ -1102,6 +1106,16 @@ ul{
 }
 .term-privacy ul li:first-child{
     margin-right: 30px;
+}
+.footer-bottom ul li:hover a{
+    color: #00C4F4;
+}
+.footer-top ul li:hover a{
+    color: #00C4F4;
+}
+.scroll-top button:hover{
+    background: #00C4F4;
+    cursor: pointer;
 }
 @media only screen and (max-width: 1500px){
     .logo img{
@@ -1240,6 +1254,12 @@ ul{
     }
     .contact-info .contact-item{
         width: 85%;
+    }
+    .subscribe-area{
+        max-width: 960px;
+    }
+    .footer-top, .footer-bottom{
+        max-width: 960px;
     }
 }
 @media only screen and (max-width: 1050px){
@@ -1421,6 +1441,42 @@ ul{
     .contact-info{
         margin-bottom: 70px;
     }
+    .subscribe-area{
+        max-width: 720px;
+    }
+    .new-letters .title, .new-letters .email-subscribe{
+        width: 100%;
+        text-align: center;
+    }
+    .subscribe-area .new-letters{
+        flex-wrap: wrap;
+        padding: 45px 30px
+    }
+    .new-letters .email-subscribe{
+        margin-top: 20px;
+    }
+    .footer-top, .footer-bottom{
+        max-width: 720px;
+    }
+    .footer-top{
+        padding: 55px 15px 50px;
+    }
+    .scroll-top{
+        display: none;
+    }
+    .footer-bottom{
+        flex-wrap: wrap;
+        row-gap: 5px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .copyright, .term-privacy{
+        text-align: center;
+        width: 100%;
+    }
+    .term-privacy ul{
+        justify-content: center;
+    }
 }
 @media only screen and (max-width: 768px){
     .btn-li{
@@ -1521,6 +1577,41 @@ ul{
     }
     .contact-info .title{
         font-size: 32px;
+    }
+    .subscribe-area{
+        max-width: 540px;
+    }
+    .subscribe-area .new-letters{
+        padding: 30px 35px;
+    }
+    .new-letters .title h2{
+        font-size: 24px;
+    }
+    .email-subscribe button{
+        position: static;
+        margin-top: 20px;
+    }
+    .footer-top, .footer-bottom{
+        max-width: 540px;
+    }
+    .footer-top{
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+    .footer-navigation, .footer-socials{
+        width: 100%;
+    }
+    .footer-navigation ul{
+        justify-content: center;
+    }
+    .footer-navigation ul li{
+        margin-right: 20px;
+    }
+    .footer-socials ul{
+        justify-content: center;
+    }
+    .footer-socials ul li{
+        margin-right: 30px;
     }
 }
 @media only screen and (max-width: 510px) {
