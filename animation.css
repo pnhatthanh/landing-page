@@ -1,6 +1,5 @@
 .shape-one{
     animation: left-to-right 5s infinite linear;
-    height: 50px;
 }
 @keyframes left-to-right {
     0%{
@@ -19,4 +18,9 @@
     }to{
         transform: rotate(360deg);
     }
+}
+
+.question-item:hover .fa-arrow-down{
+    opacity: 1;
+    transform: rotate(-180deg);
 }

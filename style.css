@@ -372,6 +372,9 @@ ul{
     bottom: 60px;
     left: 60px;
 }
+.shape-one{
+    height: 50px;
+}
 .choose-area::before{
     content: "";
     position: absolute;
@@ -756,6 +759,7 @@ ul{
     text-align: center;
     text-transform: capitalize;
     margin-bottom: 60px;
+    margin-top: 0;
 }
 
 .answer{
@@ -785,6 +789,8 @@ ul{
 }
 .question-item{
     border-radius: 100px;
+    position: relative;
+    z-index: 2;
 }
 
 .question-item button:hover{
@@ -801,8 +807,28 @@ ul{
     border-bottom: 4px solid #00C4F4;
     cursor: pointer;
 }
+.shape-ask{
+    height: 0;
+}
+.shape-two-ask{
+    height: 73px;
+    bottom: -70px;
+    left: 80px;
+}
+.shape-one-ask{
+    position: relative;
+    height: 75px;
+    top: 700px;
+    z-index: 1;
+}
 .question-item:hover .answer{
     display: block;
+}
+.fa-arrow-down{
+    font-weight: 700;
+    opacity: .3;
+    font-size: 25;
+    transition: transform .2s ease-in-out;
 }
 .contact{
     background-image: url("https://themedox.com/demo/bigtech-live/bigtech/assets/img/bg/contact_bg02.jpg");
@@ -812,6 +838,7 @@ ul{
     position: relative;
     
 }
+
 .contact::before{
     content: "";
     position: absolute;
@@ -892,6 +919,7 @@ ul{
     color: #fff;
 }
 .contact-form input, textarea{
+    box-sizing: border-box;
     width: 100%;
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(246, 246, 246, 0.06);
@@ -909,6 +937,9 @@ ul{
     background: #fff;
     border-color: #fff;
 }
+.contact-form input:focus ::placeholder{
+    color: #fff;
+}
 .contact-form textarea{
     min-height: 165px;
     max-height: 165px;
@@ -924,6 +955,10 @@ ul{
     font-weight: 700;
     letter-spacing: .5px;
     line-height: 1;
+}
+.contact-form button:hover{
+    background: #564DCA;
+    cursor: pointer;
 }
 .subscribe-area{
     max-width: 1200px;
@@ -1191,6 +1226,21 @@ ul{
     .download-content .title{
         font-size: 36px;
     }
+    .question-area{
+        max-width: 960px;
+    }
+    .question-area .title{
+        font-size: 36px;
+    }
+    .shape-ask{
+        display: none;
+    }
+    .contact-area{
+        max-width: 960px;
+    }
+    .contact-info .contact-item{
+        width: 85%;
+    }
 }
 @media only screen and (max-width: 1050px){
     .header-menu{
@@ -1352,6 +1402,25 @@ ul{
     .download-content .title{
         font-size: 40px;
     }
+    .question-area{
+        max-width: 720px;
+    }
+    .shape-ask{
+        display: none;
+    }
+    .contact-area{
+        max-width: 720px;
+        flex-wrap: wrap;
+    }
+    .contact-info, .contact-form{
+        width: 100%;
+    }
+    .contact-info .contact-item{
+        width: 100%;
+    }
+    .contact-info{
+        margin-bottom: 70px;
+    }
 }
 @media only screen and (max-width: 768px){
     .btn-li{
@@ -1437,6 +1506,21 @@ ul{
     }
     .download-area{
         max-width: 540px;
+    }
+    .question-area{
+        max-width: 540px;
+   
+    }
+    .question-item button{
+        font-size: 18px;
+        padding: 25px 60px 25px 25px;
+    }
+    .contact-area{
+        max-width: 540px;
+        padding: 0;
+    }
+    .contact-info .title{
+        font-size: 32px;
     }
 }
 @media only screen and (max-width: 510px) {
