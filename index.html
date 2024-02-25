@@ -14,6 +14,15 @@
 
 <body>
     <div class="container">
+        <div class="preload">
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+            </div>
+        </div>
         <div class="header">
             <div class="logo">
                 <img src="https://themedox.com/demo/bigtech-live/bigtech/assets/img/logo/logo.png" alt="logo">
@@ -23,19 +32,19 @@
                     <li class="home">Home
                         <ul class="sub-menu sub-home">
                             <li>Home one</li>
-                            <li>Home two</li>
+                            <a style="text-decoration: none; " href="#home"><li>Home two</li></a>
                         </ul>
                     </li>
-                    <li>About us</li>
-                    <li>Roadmap</li>
-                    <li>Faq</li>
+                    <a href="#about-us"><li>About us</li></a>
+                    <a href="#roadmaps"><li>Roadmap</li></a>
+                    <a href="#faq"><li>Faq</li></a>
                     <li>Blog
                         <ul class="sub-menu sub-home">
                             <li>OUR BLOG</li>
                             <li>BLOG DETAILS</li>
                         </ul>
                     </li>
-                    <li class="contact-us">Contact us</li>
+                    <a href="#contact-us"><li class="contact-us">Contact us</li></a>
                 </ul>
             </div>
             <div class="header-action">
@@ -54,7 +63,7 @@
                 </ul>
             </div>
         </div>
-        <div class="section-intro">
+        <div id="home" class="section-intro">
             <div class="banner-img"></div>
             <div class="banner-content">
                 <h2 class="title-sect">World’s Biggest ICO Cryptocurrency Platform for you</h2>
@@ -69,7 +78,7 @@
                 </div>
                 <div class="banner-scroll">
                     <span>Scroll down</span>
-                    <a href="#"><img src="https://themedox.com/demo/bigtech-live/bigtech/assets/img/icon/scroll_icon.svg" alt=""></a>
+                    <a href="#about-us"><img src="https://themedox.com/demo/bigtech-live/bigtech/assets/img/icon/scroll_icon.svg" alt=""></a>
                 </div>
                 </div>
             </div>
@@ -91,7 +100,7 @@
                 </div>
             </div>
         </div>
-        <div class="about-area">
+        <div id="about-us" class="about-area">
             <div class="about-img">
                 <img src="https://themedox.com/demo/bigtech-live/bigtech/assets/img/images/h2_about_img.png" alt="img">
             </div>
@@ -190,7 +199,7 @@
                 </div>
             </div>
         </div>
-        <div class="strategy-section">
+        <div id="roadmaps" class="strategy-section">
             <div class="header-strategy">
                 <span class="sub-title">roadmap</span>
                 <h2 class="title">Bigtech Strategy and <br> Project Plan</h2>
@@ -358,7 +367,7 @@
                 <img src="https://themedox.com/demo/bigtech-live/bigtech/assets/img/images/download_img.png" alt="img">
             </div>
         </div>
-        <div style="background: #F3F6FC;">
+        <div id="faq" style="background: #F3F6FC;">
             <div class="question-area">
                 <h2 class="title">Frequently asked questions</h2>
                 <div class="shape-area shape-ask">
@@ -432,7 +441,7 @@
                 </div>
             </div>
         </div>
-        <div class="contact">
+        <div id="contact-us" class="contact">
             <div class="contact-area">
                 <div class="contact-info">
                     <h2 class="title">Get in Touch</h2>
@@ -508,7 +517,7 @@
                 <p>Copyright &copy; 2023. All Rights Reserved Bigtech</p>
             </div>
             <div class="scroll-top">
-                <button><i class="fa-solid fa-arrow-up"></i></button>
+                <a style="text-decoration: none;" href="#home"><button><i class="fa-solid fa-arrow-up"></i></button></a>
                 <p>scroll Top</p>
             </div>
             <div class="term-privacy">
