@@ -7,7 +7,6 @@ window.addEventListener('scroll', function() {
         document.querySelector('.container-header').style.position = 'fixed';
     } else {
         document.querySelector('.header').style.position = 'relative';
-        document.querySelector('.header').style.backgroundColor = 'transparent';
         document.querySelector('.header').style.paddingTop = "60px";
         document.querySelector('.header').style.paddingBottom = "60px";
         document.querySelector('.container-header').style.backgroundColor = 'transparent';
