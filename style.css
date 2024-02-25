@@ -35,6 +35,15 @@ button,a{
     display: inline-block;
     animation: load 1.2s infinite ease-in-out;
 }
+.container-header{
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    height: 94px;
+}
 .header{
     padding: 60px 15px;
     height: 94px;
@@ -45,6 +54,7 @@ button,a{
     position: relative;
     top: 0;
     left: 0;
+    right: 0;
     z-index: 4;
     box-sizing: border-box;
 }
@@ -775,6 +785,9 @@ ul{
 }
 .download-content img:nth-child(1){
     margin-right: 20px;
+}
+.download-content img:hover{
+    cursor: pointer;
 }
 .question-area{
     padding: 120px 15px 130px;
