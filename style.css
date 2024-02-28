@@ -226,18 +226,6 @@ li{
     letter-spacing: 0.08em;
     border-top: 1px solid rgb(255 255 255 / 6%);
 }
-.sub-menu-2 {
-    display: block;
-    line-height: 24px;
-    padding: 10px 60px 10px 25px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.08em;
-    border-top: 1px solid rgb(255 255 255 / 6%);
-}
 .sub-social ul{
     padding: 30px 20px 20px;
     display: flex;
@@ -279,23 +267,24 @@ li{
     align-items: center;
     float: right;
     position: relative;
-    left: 32px;
+    left: 40px;
     bottom: 4px;
     z-index: 9;
+    transition: all 500ms ease;
 }
-.sub-menu-navigation{
-    display: none;
-}
-.sub-menu-navigation li{
-    margin-left: 20px;   
+.sub-menu-navigation a{
+    padding-left: 45px;
 }
 .sub-menu-navigation li a{
     font-size: 15px;
     text-transform: capitalize;
     font-weight:500;
 }
-.hover-sub:hover .sub-menu-navigation{
-    display: block;
+.home-2{
+    display: none;
+}
+.blog-2{
+    display: none;
 }
 .header-bars:hover .sub-header{
     display: block;
@@ -454,12 +443,14 @@ li{
     justify-content: center;
 }
 .about-img{
+    box-sizing: border-box;
     width: 50%;
     padding: 0 15px;
     animation: leftToRight 1.2s;
 }
 .about-img img{
     float: right;
+    max-width: 100%;
 }
 .content-about{
     width: 50%;

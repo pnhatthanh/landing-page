@@ -13,3 +13,34 @@ window.addEventListener('scroll', function() {
         document.querySelector('.container-header').style.position = 'relative';
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    var homeSub = document.querySelector('.home-sub');
+    var home = document.querySelector('.home-2');
+
+    var blogSub = document.querySelector('.blog-sub');
+    var blog = document.querySelector('.blog-2');
+
+    homeSub.addEventListener('click', function() {
+        if (home.style.display == 'none') {
+            homeSub.style.transform= 'rotate(90deg)';
+            home.style.display = 'block';
+        } else {
+            home.style.display = 'none';
+            homeSub.style.transform= 'rotate(0)';
+        }
+    });
+
+   blogSub.addEventListener('click', function() {
+        if (blog.style.display == 'none') {
+            blog.style.display = 'block';
+            blogSub.style.transform= 'rotate(90deg)';
+        } else {
+            blog.style.display = 'none';
+            blogSub.style.transform= 'rotate(0)';
+        }
+    });
+
+
+})
