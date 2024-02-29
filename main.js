@@ -5,16 +5,20 @@ window.addEventListener('scroll', function() {
         document.querySelector('.header').style.paddingBottom = "0px";
         document.querySelector('.container-header').style.background = '#030B15';
         document.querySelector('.container-header').style.position = 'fixed';
+        document.querySelector('.container-header').style.animation='1000ms ease-in-out upTodown';
     } else {
         document.querySelector('.header').style.position = 'relative';
         document.querySelector('.header').style.paddingTop = "60px";
         document.querySelector('.header').style.paddingBottom = "60px";
         document.querySelector('.container-header').style.backgroundColor = 'transparent';
         document.querySelector('.container-header').style.position = 'relative';
+        document.querySelector('.container-header').style.animation='none';
     }
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+
+    var over=document.body;
 
     var homeSub = document.querySelector('.home-sub');
     var home = document.querySelector('.home-2');
@@ -26,28 +30,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var headerBars=document.querySelector('.header-bars');
     var subHeader=document.querySelector('.sub-header');
-    subHeader.style.display = 'none';
 
     var close=document.querySelector('.close-btn');
     var container=document.querySelector('.menu-backdrop')
 
     headerBars.addEventListener('click',function(){
         event.stopPropagation();
-        if(subHeader.style.display == 'none'){
             subHeader.style.display='block'
+            subHeader.style.transform='translateX(0%)';
             container.style.visibility='visible';
-        }else {
-            container.style.visibility='hidden';
-            subHeader.style.display = 'none';
-        }
+            over.style.overflow='hidden';
+            subHeader.style.overflow= 'auto';
     })
     close.addEventListener('click',function(){
         container.style.visibility='hidden';
-        subHeader.style.display = 'none';
+        subHeader.style.transform='translateX(101%)';
+        over.style.overflow='auto';
     })
     container.addEventListener('click',function(){
         container.style.visibility='hidden';
-        subHeader.style.display = 'none';
+        subHeader.style.transform='translateX(101%)';
+        over.style.overflow='auto';
     })
 
 

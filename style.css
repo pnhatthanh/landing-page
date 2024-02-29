@@ -86,8 +86,11 @@ li{
     text-transform: uppercase;
     color: #FFFFFF;
     letter-spacing: 1px;
-    position: relative;
-  
+    position: relative;   
+}
+.navigation > li{
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 .header-menu .navigation li:hover{
     color: #00C4F4;
@@ -105,14 +108,16 @@ li{
     border-radius: 0;
     box-sizing: border-box;
     padding: 18px 15px;
-    display: none;
+    transform-origin: 0 0;
+    transform: scale(1, 0);
+    transition: all 0.3s ease-in-out;
 }
 .sub-menu li{
     margin-bottom: 5px;
     padding-bottom: 0;
 }
 .header-menu .navigation li:hover .sub-home{
-    display: block;
+    transform: scale(1, 1);
 }
 .header-action .header-right{
     display: flex;
@@ -141,10 +146,11 @@ li{
 .lang-sect{
     margin-right: 35px;
     position: relative;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 .lang-list{
     padding-top: 15px;
-    display: none;
     position: absolute;
     left: -10px;
     top: 100%;
@@ -154,9 +160,12 @@ li{
     border-radius: 6px;
     box-shadow: 0px 30px 70px 0px rgba(40, 44, 49, 0.15);
     min-width: 100px;
+    transform-origin: 0 0;
+    transform: scale(1, 0);
+    transition: all 0.3s ease-in-out;
 }
 .lang-sect:hover .lang-list{
-    display: block;
+    transform: scale(1, 1);
 }
 .lang-sect:hover{
     cursor: pointer;
@@ -184,7 +193,7 @@ li{
     cursor: pointer;
 }
 .sub-header{
-    display: none;
+    display: block;
     position: fixed;
     right: 0;
     top: 0;
@@ -196,7 +205,8 @@ li{
     box-shadow: -9px 0 14px 0px rgb(0 0 0 / 6%);
     opacity: 1;
     z-index: 99999;
-    overflow: hidden;
+    transform: translateX(101%);
+    transition: all 700ms ease;
 }
 .sub-header-logo{
     padding: 30px 25px;
