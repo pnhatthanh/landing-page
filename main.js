@@ -22,6 +22,33 @@ document.addEventListener('DOMContentLoaded', function() {
     var blogSub = document.querySelector('.blog-sub');
     var blog = document.querySelector('.blog-2');
 
+    var headerBars=document.querySelector('.header-bars');
+    var subHeader=document.querySelector('.sub-header');
+
+    var close=document.querySelector('.close-btn');
+    var container=document.querySelector('.menu-backdrop')
+
+    headerBars.addEventListener('click',function(){
+        event.stopPropagation();
+        if(subHeader.style.display == 'none'){
+            subHeader.style.display='block'
+            container.style.visibility='visible';
+        }else {
+            container.style.visibility='hidden';
+            subHeader.style.display = 'none';
+        }
+    })
+    close.addEventListener('click',function(){
+        container.style.visibility='hidden';
+        subHeader.style.display = 'none';
+    })
+    container.addEventListener('click',function(){
+        container.style.visibility='hidden';
+        subHeader.style.display = 'none';
+    })
+
+
+
     homeSub.addEventListener('click', function() {
         if (home.style.display == 'none') {
             homeSub.style.transform= 'rotate(90deg)';
