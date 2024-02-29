@@ -18,12 +18,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var homeSub = document.querySelector('.home-sub');
     var home = document.querySelector('.home-2');
+    home.style.display = 'none';
 
     var blogSub = document.querySelector('.blog-sub');
     var blog = document.querySelector('.blog-2');
+    blog.style.display = 'none';
 
     var headerBars=document.querySelector('.header-bars');
     var subHeader=document.querySelector('.sub-header');
+    subHeader.style.display = 'none';
 
     var close=document.querySelector('.close-btn');
     var container=document.querySelector('.menu-backdrop')
